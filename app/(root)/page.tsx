@@ -6,7 +6,7 @@ const Home = () => {
   const loggedIn = { firstName: 'Wahab'};
 
   return (
-    <section className="home bg-black">
+    <section className="home">
       <div className='home-content'>
         <header className='home-header'>
           <HeaderBox type = "greeting" 

@@ -115,7 +115,7 @@
   }
 
   .home-header {
-    @apply flex flex-col justify-between gap-8;
+    @apply flex text-white flex-col justify-between gap-8;
   }
 
   .total-balance {
