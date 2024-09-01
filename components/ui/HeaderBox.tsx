@@ -3,9 +3,9 @@ import React from 'react'
 const HeaderBox = ({ type =  'title', title, subtext, 
     user}: HeaderBoxProps) => {
   return (
-    <div>
+    <div className='header-box'>
         <h1 className='header-box-title'>
-            {title}
+        {<span className="text-white">{title},</span>}
             {type === 'greeting' && (
                 <span className='text-gray-500'>
                     &nbsp;{user}
