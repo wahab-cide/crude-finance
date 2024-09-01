@@ -41,10 +41,18 @@ const config = {
           DEFAULT: "#FFFFFF", // White color
         },
       },
-      backgroundImage: {
+      backgroundImageGray: {
         "gradient-white-gray": "linear-gradient(90deg, #FFFFFF 0%, #D0D5DD 100%)",
         "gradient-gray-dark": "linear-gradient(90deg, #344054 0%, #101828 100%)",
       },
+      backgroundImage: {
+        "bank-gradient": "linear-gradient(90deg, #4DAFF7 0%, #89C4FF 100%)", 
+        
+        "gradient-mesh": "url('/icons/gradient-mesh.svg')",
+      
+        "bank-green-gradient": "linear-gradient(90deg, #28C7B7 0%, #5EC9A1 100%)", 
+      },
+      
       boxShadow: {
         form: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
         chart:

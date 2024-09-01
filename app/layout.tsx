@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Crude",
   description: "Banking made easy",
   icons: {
-    icon: '/icons/logo.svg'
+    icon: '/icons/favicon-color.svg'
   }
 };
 
