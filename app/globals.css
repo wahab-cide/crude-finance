@@ -11,10 +11,6 @@ html, body {
   background-color: black;
   color: white;
 }
-p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
-  color: inherit;
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -163,7 +159,7 @@ p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
 
   /* Right sidebar */
   .right-sidebar {
-    @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-200 xl:flex w-[355px] xl:overflow-y-scroll !important;
+    @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-500 xl:flex w-[355px] xl:overflow-y-scroll !important;
   }
 
   .profile-banner {
