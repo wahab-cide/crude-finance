@@ -24,7 +24,7 @@ const SideBar = ({user}:
                 width={34}
                 height={34}
                 className='size-[24px]
-                max-xl:size-14'
+                '
                 />
                 <h1 className='sidebar-logo'>Crude</h1>
             </Link>
