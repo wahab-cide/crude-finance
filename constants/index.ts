@@ -21,7 +21,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/icons/money-send.svg",
-    route: "/payment-transfer",
+    route: "/send",
     label: "Send",
   },
 

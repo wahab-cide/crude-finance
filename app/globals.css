@@ -68,7 +68,7 @@ p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
   }
 
   .header-2 {
-    @apply text-18 font-semibold text-gray-900;
+    @apply text-18 font-semibold text-gray-300;
   }
 
   .text-10 {
@@ -167,7 +167,18 @@ p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
   }
 
   .profile-banner {
-    @apply h-[120px] w-full bg-gradient-mesh bg-cover bg-no-repeat;
+    height: 120px; /* Equivalent to h-[120px] */
+    width: 100%; /* Equivalent to w-full */
+    background-image: linear-gradient(90deg, #1a1a1a 0%, #333333 100%), url('/icons/gradient-mesh.svg'); /* Darker gradient for black background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: last baseline;
+    justify-content: left;
+    color: #ffffff; /* White text color */
+    font-family: 'Poppins', sans-serif; /* Example font */
+    text-align: center;
+    padding: 20px; /* Optional padding for spacing */
   }
 
   .profile {
@@ -183,7 +194,7 @@ p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
   }
 
   .profile-name {
-    @apply text-24 font-semibold text-gray-900;
+    @apply text-24 font-semibold text-gray-300;
   }
 
   .profile-email {
@@ -197,6 +208,10 @@ p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
   /* My Banks */
   .my-banks {
     @apply flex h-screen max-h-screen w-full flex-col gap-8 bg-gray-25 p-8 xl:py-12;
+  }
+  /* Banks Container */
+  .banks-container{
+    @apply relative flex flex-1 flex-col items-center justify-center gap-5
   }
 
   /* My Banks */
@@ -230,12 +245,15 @@ p, h1, h2, h3, h4, h5, h6, span, a, div, li, dt, dd{
 
   /* Bank Card */
   .bank-card {
-    @apply relative flex h-[190px] w-full max-w-[320px] justify-between rounded-[20px] border border-white bg-bank-gradient shadow-creditCard backdrop-blur-[6px];
+    @apply relative flex h-[190px] w-full max-w-[320px] justify-between rounded-[20px] border border-white shadow-creditCard backdrop-blur-[6px];
+    background-image: linear-gradient(90deg, #333333 0%, #4d4d4d 50%, #666666 100%);
   }
 
   .bank-card_content {
-    @apply relative z-10 flex size-full max-w-[228px] flex-col justify-between rounded-l-[20px] bg-gray-700 bg-bank-gradient px-5 pb-4 pt-5;
+    @apply relative z-10 flex size-full max-w-[228px] flex-col justify-between rounded-l-[20px] px-5 pb-4 pt-5;
+    background-image: linear-gradient(90deg, #333333 0%, #4d4d4d 50%, #666666 100%);
   }
+  
 
   .bank-card_icon {
     @apply flex size-full flex-1 flex-col items-end justify-between rounded-r-[20px] bg-bank-gradient bg-cover bg-center bg-no-repeat py-5 pr-5;
